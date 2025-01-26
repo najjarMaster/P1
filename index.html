@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
       rel="stylesheet"
     />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
 
     <title>EliteFit</title>
 
@@ -51,7 +53,7 @@ https://templatemo.com/tm-571-hexashop
 
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
-      <section class="py-2 bg-dark text-white text-center px-4">
+      <section class="py-2 bg-danger text-white text-center px-4">
         <span>
           Summer Sale: Save up to 40% on select items. Limited-time offer!
         </span>
@@ -90,10 +92,25 @@ https://templatemo.com/tm-571-hexashop
                   </ul>
                 </li>
                <li class="scroll-to-section">
-  <a href="signup.html" class="border border-black btn btn-outline-dark btn-sm d-flex align-items-center justify-content-center">Sign In</a>
+  <a href="signup.html" id="signInButton" class="border border-black btn btn-outline-dark btn-sm d-flex align-items-center justify-content-center">Sign In</a>
 </li>
-
-               
+                <!-- Logout Button -->
+    <!-- <li id="logoutButton" style="display: none;">
+      <a href="#" id="logoutBtn">Logout</a>
+    </li> -->
+    <li>
+      <div class="d-flex icons-container">
+          <div class="icon-link profile-icon" id="profileIcon">
+            <!-- <i class="fas fa-user"></i> -->
+            <span id="profileNames"></span>
+          </div>
+        
+          <!-- Logout Button (Initially hidden) -->
+          <div class="icon-link" id="logoutButton" style="display: none">
+            <a href="#" id="logoutBtn"><i class="fa fa-sign-out"></i><span> Log Out</span></a>
+          </div>
+        </div>
+        </li>
                   </ul>
                 </li>
                
@@ -999,5 +1016,6 @@ https://templatemo.com/tm-571-hexashop
       });
     </script>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+      <script type="module" src="./assets/js/signchecked.js"></script>
   </body>
 </html>

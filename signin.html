@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="font-[sans-serif]">
+      <div class="min-h-screen flex fle-col items-center justify-center p-6">
+        <div
+          class="grid lg:grid-cols-2 items-center gap-6 max-w-6xl max-lg:max-w-lg w-full"
+        >
+          <div class="h-full">
+            <img
+              src="./assets/images/Mobile login-pana.svg"
+              class="w-full h-full object-contain aspect-[628/516]"
+              alt="login img"
+            />
+          </div>
+          <form class="lg:max-w-md w-full" id="sign-in-form" action="#">
+            <h3 class="text-gray-800 text-2xl font-bold mb-8">
+              Create an account
+            </h3>
+            <p style="color: red" id="signInMessage"></p>
+            <div class="space-y-6">
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Email</label>
+                <input
+                  type="email"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 focus:bg-transparent border border-gray-100 focus:border-black outline-none transition-all"
+                  placeholder="Email"
+                  id="sign-in-email"
+                />
+              </div>
+              <div>
+                <label class="text-gray-800 text-sm mb-2 block">Password</label>
+                <input
+                  type="password"
+                  class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 focus:bg-transparent border border-gray-100 focus:border-black outline-none transition-all"
+                  placeholder="Enter password"
+                  id="sign-in-password"
+                />
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <button
+                type="submit"
+                class="py-3 px-6 text-sm text-white tracking-wide bg-red-600 hover:bg-red-700 focus:outline-none"
+                value="Login"
+              >
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./assets/js/signin.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </body>
+</html>
